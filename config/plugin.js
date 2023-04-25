@@ -2,16 +2,12 @@
 
 /** @type Egg.EggPlugin */
 module.exports = {
-  jwt: {
+  // had enabled by egg
+  // static: {
+  //   enable: true,
+  // }
+  ejs: {
     enable: true,
-    package: 'egg-jwt'
-  },
-  cors: {
-    enable: true,
-    package: 'egg-cors',
-  },
-  mysql: {
-    enable: true,
-    package: 'egg-mysql'
+    package: 'egg-view-ejs'
   }
 };

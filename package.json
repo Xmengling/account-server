@@ -1,51 +1,45 @@
 {
-  "name": "jue-diary-server",
+  "name": "account-server",
   "version": "1.0.0",
-  "description": "掘掘手札服务端项目",
+  "description": "记账本服务端",
   "private": true,
   "egg": {
     "declarations": true
   },
   "dependencies": {
-    "egg": "^2.15.1",
-    "egg-cors": "^2.2.3",
-    "egg-jwt": "^3.1.7",
-    "egg-mysql": "^3.0.0",
-    "egg-scripts": "^2.11.0",
-    "mkdirp": "^1.0.4",
-    "moment": "^2.29.1"
+    "egg": "^3",
+    "egg-scripts": "^2",
+    "egg-view-ejs": "^3.0.0"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
-    "autod-egg": "^1.1.0",
-    "egg-bin": "^4.11.0",
-    "egg-ci": "^1.11.0",
-    "egg-mock": "^3.21.0",
-    "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0"
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
   },
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-jue-diary-server",
-    "stop": "egg-scripts stop --title=egg-server-jue-diary-server",
+    "start": "egg-scripts start --daemon --title=egg-server-account-server",
+    "stop": "egg-scripts stop --title=egg-server-account-server",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "ci": "npm run lint && npm run cov"
   },
   "ci": {
-    "version": "10"
+    "version": "16, 18",
+    "type": "github"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "author": "Nick",
+  "author": "Xmengling",
   "license": "MIT"
 }
